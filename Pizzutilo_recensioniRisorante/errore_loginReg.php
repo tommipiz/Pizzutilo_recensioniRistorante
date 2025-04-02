@@ -3,19 +3,20 @@ session_start();
 $error_message = isset($_SESSION['error_message']) ? $_SESSION['error_message'] : "Errore sconosciuto.";
 unset($_SESSION['error_message']);
 ?>
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Errore di Login</title>
+    <title>Errore</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color:rgb(96, 106, 243);
+            background-color:rgb(83, 85, 224);
             font-family: Arial, sans-serif;
         }
         .error-container {
@@ -35,21 +36,21 @@ unset($_SESSION['error_message']);
             display: inline-block;
             margin-top: 10px;
             padding: 10px 15px;
-            background:rgb(106, 139, 248);
+            background:rgb(74, 71, 238);
             color: white;
             text-decoration: none;
             border-radius: 5px;
         }
         .error-container a:hover {
-            background:rgb(44, 57, 235);
+            background: #ff1e5a;
         }
     </style>
 </head>
 <body>
     <div class="error-container">
-        <h2>Errore di Login</h2>
+        <h2>Errore</h2>
         <p><?php echo htmlspecialchars($error_message); ?></p>
-        <a href="paginalogin.html">Torna alla pagina di login</a>
+        <a href="paginaRegistrazione.html">Torna alla pagina di registrazione</a>
     </div>
 </body>
 </html>

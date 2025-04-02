@@ -19,10 +19,7 @@
   
   
       $sql = "SELECT * FROM utente WHERE username = ?";
-      $stmt = $conn->prepare($sql);
-      $stmt->bind_param("s", $username);
-      $stmt->execute();
-      $result = $stmt->get_result();
+      $result  = $conn->query($sql);
   
       if ($result->num_rows == 1) {
           $row = $result->fetch_assoc();
@@ -36,11 +33,11 @@
               header("Location: errore_loginReg.php");
               exit();
           }
-      } else {
+        } else {
           $_SESSION['error_message'] = "Username non esistente.";
           header("Location: errore_loginReg.php");
           exit();
-      }
+    }
   } 
   ?>
     
