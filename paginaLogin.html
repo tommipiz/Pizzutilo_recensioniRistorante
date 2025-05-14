@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensioni del Ristorante - Login</title>
+</head>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('./images/restaurant-background.jpg') no-repeat center center/cover;
+            text-align: center;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #ffffff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .registrati {
+            font-size: 20px;
+            font-weight:bold;
+            color: #258ef0;
+            background: linear-gradient(90deg,  #387bb9, #14528b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+            text-decoration: none;
+        }
+        span {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(90deg, #ffffff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+        }
+        input[type="text"], input[type="password"] {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        input[type="submit"] {
+            background: #1e4adb;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #0b0fe4;
+        }
+        @media (max-width: 600px) {
+            .login-container {
+                width: 90%;
+            }
+        }
+    </style>
+<body>
+    <div class="title">Accesso al Risorante</div>
+    <div class="login-container">
+        <h2>Accedi</h2>
+        <form action="scriptlogin.php" method="post">
+            <input type="text" name="username" placeholder="Inserisci username" required>
+            <input type="password" name="password" placeholder="Inserisci password" required>
+            <input type="submit" value="Accedi">
+        </form>
+        <br>
+        <span>Non sei registrato? </span><a href="paginaRegistrazione.html" class="registrati">Registrati</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('images/restaurant-background.jpg') no-repeat center center/cover;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.login-container, .register-container, .welcome-container, .admin-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px 0;
+}
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.login-container input[type="text"],
+.login-container input[type="password"],
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container input[type="email"],
+.login-container select,
+.register-container select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.7);
+}
+input[type="submit"], .button {
+    background: #3e4af8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+input[type="submit"]:hover, .button:hover {
+    background: #221fe0;
+}
+.logout-btn {
+    background: #1e4adb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+.logout-btn:hover {
+    background: #0b0fe4;
+}
+.error-container {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.error-container h2 {
+    color: #ff4d4d;
+}
+.error-container p {
+    color: #fff;
+}
+.error-container a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #3e4af8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.error-container a:hover {
+    background: #221fe0;
+}
+.welcome-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(137, 130, 235);
+    text-transform: uppercase;
+}
+.welcome-container ul {
+    list-style: none;
+    padding: 0;
+}
+.welcome-container li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background: rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 600px) {
+    .login-container, .register-container, .welcome-container, .admin-container {
+        width: 95%;
+    }
+}
