@@ -29,7 +29,7 @@ if ($result->num_rows > 0) {
 }
 
 // Inserisci nuovo ristorante
-$sql = "INSERT INTO ristorante (codice, nome, indirizzo, citta) VALUES (?, ?, ?, ?)";
+$sql = "INSERT INTO ristorante (codice, nome, indirizzo, citta) VALUES ("$codice", "$nome", "$indirizzo", "$citta")";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ssss", $codice, $nome, $indirizzo, $citta);
 if ($stmt->execute()) {

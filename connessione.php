@@ -2,7 +2,7 @@
 $servernameDB = "localhost";
 $usernameDB = "root";
 $passwordDB = "";      // Cambiare se necessario
-$dbnameDB = "recensioni_ristoranti";  // Nome del database
+$dbnameDB = "recensione_ristoranti";  // Nome del database
 
 mysqli_report(MYSQLI_REPORT_OFF);   // Disabilita eccezioni automatiche
 

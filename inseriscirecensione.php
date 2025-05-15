@@ -12,7 +12,7 @@ $codiceRistorante = $_POST['codiceristorante'];
 $voto = intval($_POST['voto']);
 
 // Controlla se recensione già esistente per questo utente e ristorante
-$sql = "SELECT * FROM recensione WHERE idutente = ? AND codiceristorante = ?";
+$sql = "SELECT * FROM recensione WHERE idutente = " . $idUtente . " AND codiceristorante = " . $codiceRistorante . "";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("is", $idUtente, $codiceRistorante);
 $stmt->execute();

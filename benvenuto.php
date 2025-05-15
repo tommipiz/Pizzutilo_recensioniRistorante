@@ -85,7 +85,7 @@ $resultRistoranti = $conn->query("SELECT codice, nome FROM ristorante");
                 <option value="" disabled selected>Seleziona ristorante</option>
                 <option value="cantinone">Cantinone</option>
                 <option value="boschetto">Boschetto</option>
-                <option value="savatino">Savatino</option>
+                <option value="savatino">Sabatino</option>
                 <option value="settimo">Settimo</option>
             </select>
             <br><br>

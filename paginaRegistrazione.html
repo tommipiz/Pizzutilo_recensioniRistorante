@@ -45,6 +45,27 @@
             color: #fff;
             margin-bottom: 20px;
         }
+        .registrati {
+            font-size: 20px;
+            font-weight:bold;
+            color: #258ef0;
+            background: linear-gradient(90deg,  #1c4061, #0b3964);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+            text-decoration: none;
+        }
+        span {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(90deg, #ffffff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
         input {
             width: 100%;
             padding: 12px;
@@ -85,7 +106,8 @@
             <input type="text" name="cognome" placeholder="Inserisci cognome" required>
             <input type="email" name="email" placeholder="Inserisci email" required>
             <input type="submit" value="Registrati">
-        </form>
+        </form><br>
+        <span>Sei già registrato? </span><a href="paginaLogin.html" class="registrati">Accedi</a>
     </div>
 </body>
 </html>
